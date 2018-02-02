@@ -1,0 +1,23 @@
+{
+  "name": "unsplash-desktop",
+  "version": "0.0.0",
+  "description": "Simple app for setting unsplash photos as desktop wallpapers.",
+  "main": "app.js",
+  "repository": "https://github.com/dusansimic/unsplash-desktop.git",
+  "author": "Dušan Simić <dusan.simic1810@gmail.com> (http://dusansimic.cf)",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^15.2.0",
+    "electron": "1.8.2-beta.4",
+    "xo": "*"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "xo",
+    "bundle": "browserify main.js -o static/bundle.js"
+  },
+  "dependencies": {
+    "download": "^6.2.5",
+    "wallpaper": "^2.6.0"
+  }
+}
